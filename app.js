@@ -8,14 +8,13 @@ import errorMiddleware from './Middlewares/error.middleware.js';
 import cookieParser from 'cookie-parser';
 import arcjetMiddleware from './Middlewares/arcjet.middleware.js';
 import workflowRouter from './routes/workflow.routes.js';
-
+import cors from 'cors'
 const app = express();
 
 app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 app.use(express.json())
 app.use(arcjetMiddleware)
-const cors = require("cors");
 
 app.use(cors({
     origin: "*", // Allows requests from any origin (not recommended for production)
