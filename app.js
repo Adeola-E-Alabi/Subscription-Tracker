@@ -15,6 +15,13 @@ app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 app.use(express.json())
 app.use(arcjetMiddleware)
+const cors = require("cors");
+
+app.use(cors({
+    origin: "*", // Allows requests from any origin (not recommended for production)
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Accept"]
+}));
 
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/users', userRouter)
