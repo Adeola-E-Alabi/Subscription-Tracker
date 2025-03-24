@@ -6,9 +6,8 @@ const envPath = `.env.${process.env.NODE_ENV || 'development'}.local`;
 dotenv.config({ path: envPath });
 
 //console.log('PORT from env:', process.env); // Debugging line
-
+export const PORT = process.env.PORT || 5001
 export const {
-    PORT,
     NODE_ENV,
     DB_URI,
     JWT_SECRET,
