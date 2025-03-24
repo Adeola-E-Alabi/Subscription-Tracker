@@ -9,7 +9,7 @@ import cookieParser from 'cookie-parser';
 import arcjetMiddleware from './Middlewares/arcjet.middleware.js';
 import workflowRouter from './routes/workflow.routes.js';
 import cors from 'cors'
-import journalRouter from './routes/Journal.route.js';
+import journalRouter from './routes/journal.route.js';
 const app = express();
 
 app.use(express.urlencoded({extended:false}))
