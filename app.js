@@ -8,6 +8,7 @@ import errorMiddleware from './Middlewares/error.middleware.js';
 import cookieParser from 'cookie-parser';
 import arcjetMiddleware from './Middlewares/arcjet.middleware.js';
 import workflowRouter from './routes/workflow.routes.js';
+import journalRouter from './routes/Journal.route.js';
 import cors from 'cors'
 const app = express();
 
@@ -26,6 +27,7 @@ app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/subscriptions', subscriptionRouter)
 app.use('/api/v1/workflows', workflowRouter)
+app.use('/api/v1/Journal', journalRouter)
 app.use(errorMiddleware)
 //api/v1/auth/sign-up
 app.get('/', (req, res) => {
@@ -36,3 +38,5 @@ app.listen(PORT, async () => {
     console.log(`Subscription Tracker API is running on http://localhost:${PORT}`)
     await connectToDatabase()
 })
+
+//reminder that I added a port to development. Remove before committing.

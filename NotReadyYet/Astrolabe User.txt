@@ -1,0 +1,7 @@
+Astrolabe User
+
+"name": "Adeola Alabi",
+"email": "adeola-alabi@example.com",
+"password": "$2b$10$B4WnNMKYVztbATmEv2pgZutorBz4b8EP.vc8/j76BgEPlB1g3Mv5q"
+"_id": "67e1c0a1fff2226d44fc1bb7",
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2UxYzBhMWZmZjIyMjZkNDRmYzFiYjciLCJpYXQiOjE3NDI4NDgxNjEsImV4cCI6MTc0MjkzNDU2MX0.kDoqv0MR-NDGg94Xn5jJGsda68Sa0o7LMyypEKCjkME",

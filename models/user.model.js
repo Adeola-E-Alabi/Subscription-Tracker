@@ -24,7 +24,8 @@ const userSchema = new mongoose.Schema(
         minLength:6,
         },
     JournalEntries:{
-        type:Object
+        type:Object,
+        required: [true, "Journal entry not found"]
         }
     },
 
