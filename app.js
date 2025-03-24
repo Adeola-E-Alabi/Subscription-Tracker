@@ -9,6 +9,7 @@ import cookieParser from 'cookie-parser';
 import arcjetMiddleware from './Middlewares/arcjet.middleware.js';
 import workflowRouter from './routes/workflow.routes.js';
 import cors from 'cors'
+import journalRouter from './routes/Journal.route.js';
 const app = express();
 
 app.use(express.urlencoded({extended:false}))
@@ -24,6 +25,7 @@ app.use(cors({
 
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/users', userRouter)
+app.use('/api/v1/journal', journalRouter)
 app.use('/api/v1/subscriptions', subscriptionRouter)
 app.use('/api/v1/workflows', workflowRouter)
 app.use(errorMiddleware)

@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema(
     {name: {
         type: String,
-        required: [true, "User namer is required"],
+        required: [true, "Username is required"],
         trim: true,
         minLength: 2,
         maxLength:50,
@@ -22,6 +22,9 @@ const userSchema = new mongoose.Schema(
         type:String,
         required: [true, 'User Password is required'],
         minLength:6,
+        },
+    JournalEntries:{
+        type:Object
         }
     },
 
