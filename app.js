@@ -8,7 +8,7 @@ import errorMiddleware from './Middlewares/error.middleware.js';
 import cookieParser from 'cookie-parser';
 import arcjetMiddleware from './Middlewares/arcjet.middleware.js';
 import workflowRouter from './routes/workflow.routes.js';
-import journalRouter from './routes/Journal.route.js';
+import journalRouter from './routes/journal.route.js';
 import cors from 'cors'
 const app = express();
 
